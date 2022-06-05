@@ -19,7 +19,9 @@
     ],
     "paths": {
       "@/*": ["src/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "pixi.js": ["./node_modules/pixi.js"],
+      "@pixi/*": ["./node_modules/@pixi/*"]
     }, 
   },
   "include": [

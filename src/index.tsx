@@ -1,15 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, Text } from 'react-pixi-fiber';
+import { container } from './games/container';
 import './reset.less';
-import { RecoilRoot } from 'recoil';
 
-const App = () => {
-  return <>App</>;
+const App: React.FC = () => {
+  return <Text text="Hello World!" x={200} y={200} />;
 };
 
-ReactDOM.render(
-  <RecoilRoot>
-    <App />
-  </RecoilRoot>,
-  document.getElementById('app'),
-);
+render(<App />, container);
